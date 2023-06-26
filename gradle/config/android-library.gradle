@@ -1,0 +1,29 @@
+subprojects { module ->
+    plugins.withId("com.android.library") {
+        android {
+            namespace = "com.series.app.series.ui"
+            compileSdk = 33
+
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_1_8
+                targetCompatibility JavaVersion.VERSION_1_8
+            }
+
+            buildFeatures {
+                compose true
+            }
+
+            composeOptions {
+                kotlinCompilerExtensionVersion = "1.4.6"
+            }
+
+        }
+        plugins.withId("org.jetbrains.kotlin.android") {
+            module.android {
+                kotlinOptions {
+                    jvmTarget = "1.8"
+                }
+            }
+        }
+    }
+}

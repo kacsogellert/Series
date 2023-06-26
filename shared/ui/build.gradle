@@ -1,0 +1,33 @@
+plugins {
+    id("com.android.library")
+    id("kotlin-android")
+}
+
+dependencies {
+    implementation(project(":series:domain"))
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    def composeBom = platform('androidx.compose:compose-bom:2023.05.01')
+    implementation composeBom
+    androidTestImplementation composeBom
+
+    implementation 'androidx.compose.material3:material3'
+    // Android Studio Preview support
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+
+    implementation 'androidx.compose.material:material-icons-extended'
+
+    implementation "io.insert-koin:koin-core:$koinVersion"
+    implementation "io.insert-koin:koin-androidx-compose:$koinComposeVersion"
+    implementation "io.insert-koin:koin-android:$koinVersion"
+    implementation("io.coil-kt:coil-compose:$coilVersion")
+    implementation "com.google.accompanist:accompanist-systemuicontroller:0.31.4-beta"
+    implementation "androidx.navigation:navigation-compose:2.6.0"
+
+}

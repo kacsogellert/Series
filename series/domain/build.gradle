@@ -1,0 +1,10 @@
+plugins {
+    id("kotlin")
+}
+
+dependencies {
+    implementation(project(":shared:domain"))
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+    implementation "io.insert-koin:koin-core:$koinVersion"
+
+}

@@ -1,0 +1,16 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '8.0.1' apply false
+    id 'com.android.library' version '8.0.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.20' apply false
+}
+
+ext.koinVersion = '3.4.2'
+ext.koinComposeVersion = '3.4.5'
+ext.retrofitVersion = '2.9.0'
+ext.okHttpVersion = '4.11.0'
+ext.coroutinesVersion = '1.6.4'
+ext.coilVersion = '2.4.0'
+ext.composeBoom = 'androidx.compose:compose-bom:2023.06.01'
+
+apply from: "gradle/config/android-library.gradle"

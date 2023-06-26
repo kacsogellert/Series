@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="series_air_date_format">Air date: %s</string>
+    <string name="series_rating_format">Rating: %.1f</string>
+    <string name="series_download_error">Something went wrong while downloading the series</string>
+    <string name="series_try_again">Try again</string>
+    <string name="series_overview">Overview</string>
+    <string name="series_genre">Genre</string>
+    <string name="series_title">Title</string>
+</resources>
