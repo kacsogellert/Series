@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.series.app.series.shared.model.SeriesDetailModel
 import com.series.app.series.shared.usecase.GetSeriesDetailsUseCase
-import com.series.app.series.shared.ResultWrapper
+import com.series.app.shared.ResultWrapper
 import com.series.app.shared.NavigationDestination
 import kotlinx.coroutines.launch
 

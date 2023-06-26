@@ -1,4 +1,4 @@
-package com.series.app.series.shared
+package com.series.app.shared
 
 
 sealed class ResultWrapper<out T> {

@@ -7,7 +7,7 @@ import com.series.app.series.shared.model.SeriesModel
 import com.series.app.series.shared.usecase.GetSeriesUseCase
 import com.series.app.series.shared.usecase.LoadMoreSeriesUseCase
 import com.series.app.series.shared.usecase.ObserveSeriesUseCase
-import com.series.app.series.shared.ResultWrapper
+import com.series.app.shared.ResultWrapper
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.launchIn
@@ -64,5 +64,4 @@ class SeriesViewModel(
             }
         }
     }
-
 }

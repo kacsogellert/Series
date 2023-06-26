@@ -7,6 +7,3 @@ data class SeriesModel(
     val vote: Double,
     val airDate: String,
 )
-
-
-

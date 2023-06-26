@@ -6,7 +6,6 @@ plugins {
 android {
     namespace 'com.series.app'
     compileSdk 33
-
     defaultConfig {
         applicationId "com.series.app"
         minSdk 27
@@ -16,7 +15,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         debug {
             buildConfigField "String", "SERIES_ENDPOINT", "\"https://api.themoviedb.org/3/\""
@@ -35,17 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
     buildFeatures {
         buildConfig = true
         compose true
     }
-
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.6"
     }
 }
-
 dependencies {
     implementation(project(":series:domain:"))
     implementation(project(":series:data:"))
