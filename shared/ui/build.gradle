@@ -11,23 +11,16 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
-
-    def composeBom = platform('androidx.compose:compose-bom:2023.05.01')
-    implementation composeBom
-    androidTestImplementation composeBom
-
+    implementation platform("androidx.compose:compose-bom:$composeBoomVersion")
     implementation 'androidx.compose.material3:material3'
-    // Android Studio Preview support
-    implementation 'androidx.compose.ui:ui-tooling-preview'
-    debugImplementation 'androidx.compose.ui:ui-tooling'
-
-    implementation 'androidx.compose.material:material-icons-extended'
+    implementation "androidx.compose.ui:ui-tooling-preview"
+    debugImplementation "androidx.compose.ui:ui-tooling"
+    implementation "androidx.compose.material:material-icons-core"
 
     implementation "io.insert-koin:koin-core:$koinVersion"
     implementation "io.insert-koin:koin-androidx-compose:$koinComposeVersion"
     implementation "io.insert-koin:koin-android:$koinVersion"
-    implementation("io.coil-kt:coil-compose:$coilVersion")
+    implementation "io.coil-kt:coil-compose:$coilVersion"
+    implementation "androidx.navigation:navigation-compose:$composeNavigationVersion"
     implementation "com.google.accompanist:accompanist-systemuicontroller:0.31.4-beta"
-    implementation "androidx.navigation:navigation-compose:2.6.0"
-
 }

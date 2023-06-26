@@ -11,6 +11,7 @@ ext.retrofitVersion = '2.9.0'
 ext.okHttpVersion = '4.11.0'
 ext.coroutinesVersion = '1.6.4'
 ext.coilVersion = '2.4.0'
-ext.composeBoom = 'androidx.compose:compose-bom:2023.06.01'
+ext.composeNavigationVersion = '2.6.0'
+ext.composeBoomVersion = '2023.06.01'
 
 apply from: "gradle/config/android-library.gradle"
