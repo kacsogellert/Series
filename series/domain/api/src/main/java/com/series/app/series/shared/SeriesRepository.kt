@@ -4,7 +4,7 @@ import com.series.app.series.shared.model.SeriesDetailModel
 import com.series.app.series.shared.model.SeriesModel
 import kotlinx.coroutines.flow.Flow
 
-interface SeriesRepository {
+ interface SeriesRepository {
     fun observeSeries(): Flow<List<SeriesModel>>
 
     suspend fun getSeries()

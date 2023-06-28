@@ -16,7 +16,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Series"
 include ':app'
-include ':series:domain'
+include ':series:domain:api'
+include ':series:domain:implementation'
 include ':series:data'
 include ':series:ui'
 include ':shared:data'

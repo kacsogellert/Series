@@ -42,7 +42,8 @@ android {
     }
 }
 dependencies {
-    implementation(project(":series:domain:"))
+    implementation(project(":series:domain:api"))
+    implementation(project(":series:domain:implementation"))
     implementation(project(":series:data:"))
     implementation(project(":series:ui:"))
     implementation(project(":shared:data"))
