@@ -11,10 +11,8 @@ sealed class ResultWrapper<out T> {
     fun isFailure(): Boolean = !isSuccess()
 }
 
-suspend inline fun <T> wrapToResult(crossinline func: suspend () -> T): ResultWrapper<T> {
-    return try {
-        ResultWrapper.Success(func())
-    } catch (unhandledException: Throwable) {
-        ResultWrapper.Exception(unhandledException)
-    }
+suspend inline fun <T> wrapToResult(crossinline func: suspend () -> T): ResultWrapper<T> = try {
+    ResultWrapper.Success(func())
+} catch (unhandledException: Throwable) {
+    ResultWrapper.Exception(unhandledException)
 }
