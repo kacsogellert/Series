@@ -13,6 +13,8 @@
     - [Response/Request classes](#responserequest-classes)
     - [Model class](#model-class)
   - [Use case](#use-case)
+  - [Repository](#repository)
+  - [Api](#api)
 - [Dependency Management](#dependency-management)
 - [Version Control](#version-control)
 - [Conclusion](#conclusion)
@@ -104,6 +106,31 @@ interface SomeMethodUseCase(){
 }
 
 ```
+
+### Repository
+- Repositories are classes responsible to manage data access and interaction with a data source, such as a database, API, or any other external data storage.
+- Repositories also can serve as an in memory storage of the data
+
+### Api
+- Always use the Ktor's `get``post``update``delete`etc. extension functions to launch network requests
+
+#### Example 
+
+```kotlin
+interface ProfileApi {
+    suspend fun getProfile(): ProfileResponse
+}
+
+internal class DefaultProfileApi(
+    private val client: HttpClient,
+    private val baseUrl: String
+) : ProfileApi {
+    override suspend fun getProfile(): ProfileResponse = client.get {
+        urlFromBase(baseUrl, "/guest/v1/current_profile")
+    }.body()
+}
+```
+
 
 ## Dependency management
 
