@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [File and package Structure](#file-and-package-structure)
+- [File and package structure](#file-and-package-structure)
 - [Naming conventions](#naming-conventions)
 - [Code formatting](#code-formatting)
 - [Code structure](#code-structure)
