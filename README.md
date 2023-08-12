@@ -1,3 +1,5 @@
+[Multiplatform](/multiplatform.md)
+
 ## Architecture details
 
 <img width="1335" alt="Screenshot 2023-06-28 at 15 18 38" src="https://github.com/kacsogellert/Series/assets/8707773/d2c10d49-960a-4ba6-bc9b-17593cd441ab">
