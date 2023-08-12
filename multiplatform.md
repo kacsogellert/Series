@@ -21,7 +21,7 @@
 
 These coding standards are designed to ensure consistency, readability, and maintainability in our Kotlin Multiplatform project. Adhering to these guidelines will help the development team produce high-quality, uniform code.
 
-## File and package Structure
+## File and package structure
 
 - Separate code into logical modules or packages based on functionality.
 - Respect the Single Responisability principle
