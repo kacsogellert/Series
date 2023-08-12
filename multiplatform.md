@@ -2,11 +2,11 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [File and Package Structure](#file-and-package-structure)
-- [Naming Conventions](#naming-conventions)
-- [Code Formatting](#code-formatting)
-- [Code Structure](#code-structure)
-  - [General Rules](#general-rules)
+- [File and package Structure](#file-and-package-structure)
+- [Naming conventions](#naming-conventions)
+- [Code formatting](#code-formatting)
+- [Code structure](#code-structure)
+  - [General rules](#general-rules)
   - [Interface Declaration](#interface-declaration)
   - [Implementation Naming](#implementation-naming)
   - [Model Classes](#model-classes)
@@ -21,13 +21,13 @@
 
 These coding standards are designed to ensure consistency, readability, and maintainability in our Kotlin Multiplatform project. Adhering to these guidelines will help the development team produce high-quality, uniform code.
 
-## File and Package Structure
+## File and package Structure
 
 - Separate code into logical modules or packages based on functionality.
 - Respect the Single Responisability principle
 - Follow the standard Kotlin package naming convention (e.g., `com.example.module`).
 
-## Naming Conventions
+## Naming conventions
 
 - Use descriptive and meaningful names for classes, functions, variables, and packages.
 - Class and Interface names should use UpperCamelCase (e.g., `MyClass`, `MyInterface`).
@@ -35,14 +35,14 @@ These coding standards are designed to ensure consistency, readability, and main
 - Constants should be in uppercase with underscores (e.g., `MY_CONSTANT`).
 - Use clear and concise names that reflect the purpose of the code.
 
-## Code Formatting
+## Code formatting
 
 - Use a consistent code formatting style across the project.
 - Use a line length of around 180 characters.
 - Place opening braces on the same line as the corresponding declaration (Kotlin convention).
 - Maintain consistent spacing around operators and keywords.
 
-## Code stucture
+## Code structure
 ### General rules
 
 #### Interface declaration:
@@ -105,14 +105,14 @@ interface SomeMethodUseCase(){
 
 ```
 
-## Dependency Management
+## Dependency management
 
 - Use gradle as dependency management 
 - Declare dependencies in a central location to ensure consistency across platforms `depndencies.kt` from the `buildSrc` module
 - Regularly update dependencies to benefit from bug fixes and new features.
 - If there is no good reason, do not use unstable dependencies
 
-## Version Control
+## Version control
 
 - Use git to track changes and collaborate with the development team.
 - Use gitFlow as the branching strategy
