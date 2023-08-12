@@ -112,7 +112,7 @@ interface SomeMethodUseCase(){
 - Repositories also can serve as an in memory storage of the data
 
 ### Api
-- Always use the Ktor's `get``post``update``delete`etc. extension functions to launch network requests
+- Always use the Ktor's `get,post,update,delete` etc. extension functions to launch network requests
 
 #### Example 
 
